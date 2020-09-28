@@ -27,7 +27,7 @@ export default new Vuex.Store({
   },
   actions: {
     GET_NEWS({commit}) {
-      return axios('https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?' + 'country=ru&' + 'apiKey=f278f5ae687f40f0aee3e3992f57694f', {
+      return axios('http://newsapi.org/v2/top-headlines?' + 'country=ru&' + 'apiKey=f278f5ae687f40f0aee3e3992f57694f', {
         method: "GET"
       })
       .then((news)=>{
